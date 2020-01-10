@@ -1,6 +1,7 @@
 # sowm
 
-<a float="right" href="https://github.com/dragonsourced/sowm/img/sowm-mmori.png"><img src="img/sowm-mmori.png" width="35%"></a>
+<a href="https://github.com/dragonsourced/sowm/img/sowm-mmori.png"><img src="img/sowm-mmori.png" width="40%"></a>
+<a href="https://github.com/dragonsourced/sowm/img/sowm.png"><img src="img/sowm.png" width="40%"></a>
 
 An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 
@@ -10,8 +11,6 @@ An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 - Mix of mouse and keyboard workflow.
 - Focus with cursor.
 - Rounded corners (*[through patch](https://github.com/dylanaraps/sowm/blob/master/patches/sowm-rounded-corners.patch)*)
-
-<a float="right" href="https://github.com/dragonsourced/sowm/img/sowm.png"><img src="img/sowm.png" width="35%"></a>
 
 - Alt-Tab window focusing.
 - All windows die on exit.
