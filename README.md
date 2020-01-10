@@ -1,6 +1,6 @@
 # sowm
 
-<a href="https://user-images.githubusercontent.com/6799467/66687576-9747c200-ec72-11e9-947d-5b96753eab03.jpg"><img src="https://user-images.githubusercontent.com/6799467/66687576-9747c200-ec72-11e9-947d-5b96753eab03.jpg" width="43%" align="right"></a>
+<a href="img/sowm-mmori.png"><img src="img/sowm-mmori.png" width="43%" align="right"></a>
 
 An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 
@@ -11,7 +11,7 @@ An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 - Focus with cursor.
 - Rounded corners (*[through patch](https://github.com/dylanaraps/sowm/blob/master/patches/sowm-rounded-corners.patch)*)
 
-<a href="https://user-images.githubusercontent.com/6799467/66687814-8cd9f800-ec73-11e9-97b8-6ae77876bd1b.jpg"><img src="https://user-images.githubusercontent.com/6799467/66687814-8cd9f800-ec73-11e9-97b8-6ae77876bd1b.jpg" width="43%" align="right"></a>
+<a href="img/sowm.png"><img src="img/sowm.png" width="43%" align="right"></a>
 
 - Alt-Tab window focusing.
 - All windows die on exit.
