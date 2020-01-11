@@ -49,6 +49,7 @@ An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 | `MOD4` + `p`             | music menu       | `music.sh`       |
 | `MOD4` + `a`             | file manager     | `fman.sh`        |
 | `MOD4` + `s`             | screenshot       | `screenshot.sh`  |
+| `MOD4` + `space`         | keyboard layout  | `nextlayout.sh`  |
 | `XF86_AudioLowerVolume`  | volume down      | `chvol.sh`       |
 | `XF86_AudioRaiseVolume`  | volume up        | `chvol.sh`       |
 | `XF86_AudioMute`         | volume toggle    | `chvol.sh`       |

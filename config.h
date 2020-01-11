@@ -15,6 +15,7 @@ const char* hphones[] = {"headphones.sh",   0};
 const char* music[]   = {"music.sh",        0};
 const char* fman[]    = {"fman.sh",         0};
 const char* quit[]    = {"killall", "sowm", 0};
+const char* layout[]  = {"nextlayout.sh",   0};
 
 static struct key keys[] = {
     {MOD,           XK_q,   win_kill,   {0}},
@@ -30,6 +31,7 @@ static struct key keys[] = {
     {MOD, XK_m,      run, {.com = music}},
     {MOD, XK_a,      run, {.com = fman}},
     {MOD, XK_s,      run, {.com = scrot}},
+    {MOD, XK_space,  run, {.com = layout}},
     {MOD, XK_Return, run, {.com = term}},
 
     {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
