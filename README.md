@@ -72,6 +72,11 @@ An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
     - In case of applying multiple patches, it has to be done **manually**.
 
 
+## Updating
+
+    git pull https://github.com/DylanAraps/sowm
+
+
 ## Thanks
 
 - 2bwm
