@@ -20,6 +20,7 @@ const char* quit[]    = {"killall", "sowm", 	0};
 const char* layout[]  = {"nextlayout.sh",   	0};
 const char* unicode[] = {"unicode.sh",      	0};
 const char* theme[]   = {"theme.sh", "menu", 	0};
+const char* lock[]    = {"slock",          	0};
 const char* rss[]     = {"rss.sh",          	0};
 
 static struct key keys[] = {
@@ -37,6 +38,7 @@ static struct key keys[] = {
     {MOD, XK_a,      run, {.com = fman}},
     {MOD, XK_r,      run, {.com = rss}},
     {MOD, XK_s,      run, {.com = scrot}},
+    {MOD, XK_l,      run, {.com = lock}},
     {MOD, XK_t,      run, {.com = theme}},
     {MOD, XK_u,      run, {.com = unicode}},
     {MOD, XK_space,  run, {.com = layout}},
