@@ -8,16 +8,19 @@ const char* term[]    = {"st",             0};
 const char* scrot[]   = {"screenshot.sh",  0};
 const char* briup[]   = {"bri", "10", "+", 0};
 const char* bridown[] = {"bri", "10", "-", 0};
+
 const char* voldown[] = {"chvol.sh", "5%-",    0};
 const char* volup[]   = {"chvol.sh", "5%+",    0};
 const char* volmute[] = {"chvol.sh", "toggle", 0};
-const char* hphones[] = {"headphones.sh",   0};
-const char* music[]   = {"music.sh",        0};
-const char* fman[]    = {"fman.sh",         0};
-const char* quit[]    = {"killall", "sowm", 0};
-const char* layout[]  = {"nextlayout.sh",   0};
-const char* unicode[] = {"unicode.sh",      0};
-const char* rss[]     = {"rss.sh",          0};
+
+const char* hphones[] = {"headphones.sh",   	0};
+const char* music[]   = {"music.sh",        	0};
+const char* fman[]    = {"fman.sh",         	0};
+const char* quit[]    = {"killall", "sowm", 	0};
+const char* layout[]  = {"nextlayout.sh",   	0};
+const char* unicode[] = {"unicode.sh",      	0};
+const char* theme[]   = {"theme.sh", "menu", 	0};
+const char* rss[]     = {"rss.sh",          	0};
 
 static struct key keys[] = {
     {MOD,           XK_q,   win_kill,   {0}},
@@ -34,6 +37,7 @@ static struct key keys[] = {
     {MOD, XK_a,      run, {.com = fman}},
     {MOD, XK_r,      run, {.com = rss}},
     {MOD, XK_s,      run, {.com = scrot}},
+    {MOD, XK_t,      run, {.com = theme}},
     {MOD, XK_u,      run, {.com = unicode}},
     {MOD, XK_space,  run, {.com = layout}},
     {MOD, XK_Return, run, {.com = term}},
