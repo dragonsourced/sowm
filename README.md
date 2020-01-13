@@ -74,6 +74,7 @@ An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 
 ## Updating
 
+    git pull
     git pull https://github.com/DylanAraps/sowm
 
 
