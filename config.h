@@ -25,7 +25,7 @@ const char* rss[]     = {"rss.sh",          	0};
 
 static struct key keys[] = {
     {MOD,           XK_q,   win_kill,   {0}},
-    {MOD|ShiftMask, XK_q,   quit,       {0}},
+    {MOD|ShiftMask, XK_q,   run,        {.com = quit}},
     {MOD,           XK_c,   win_center, {0}},
     {MOD,           XK_f,   win_fs,     {0}},
 
