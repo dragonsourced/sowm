@@ -1,4 +1,4 @@
-# sowm
+# sowm (*Simple Opinionated Window Manager*)
 
 <a href="https://github.com/dragonsourced/sowm/tree/master/img/sowm-mmori.png"><img src="img/sowm-mmori.png" width="48%"></a>
 <a href="https://github.com/dragonsourced/sowm/tree/master/img/sowm.png"><img src="img/sowm.png" width="48%"></a>
