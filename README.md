@@ -10,7 +10,7 @@ An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 - Window centering.
 - Mix of mouse and keyboard workflow.
 - Focus with cursor.
-- Rounded corners (*[through patch](https://github.com/dylanaraps/sowm/blob/master/patches/sowm-rounded-corners.patch)*)
+- Rounded corners (*[through patch](https://github.com/dylanaraps/sowm-patches)*)
 
 - Alt-Tab window focusing.
 - All windows die on exit.
@@ -21,6 +21,8 @@ An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 
 
 <br>
+
+Patches available here: https://github.com/dylanaraps/sowm-patches
 
 ## Default Keybindings
 
