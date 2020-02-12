@@ -1,7 +1,7 @@
 # sowm (*Simple Opinionated Window Manager*)
 
-<a href="https://github.com/dragonsourced/sowm/tree/master/img/sowm-mmori.png"><img src="img/sowm-mmori.png" width="48%"></a>
-<a href="https://github.com/dragonsourced/sowm/tree/master/img/sowm.png"><img src="img/sowm.png" width="48%"></a>
+<a href="https://github.com/dragonsourced/sowm/tree/master/img/light.png"><img src="img/light.png" width="48%"></a>
+<a href="https://github.com/dragonsourced/sowm/tree/master/img/dark.png"><img src="img/dark.png" width="48%"></a>
 
 An itsy bitsy floating window manager (*220~ sloc / 24kb compiled!*).
 
