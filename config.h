@@ -3,25 +3,26 @@
 
 #define MOD Mod4Mask
 
-const char* menu[]    = {"menu_run.sh",    0};
+const char* menu[]    = {"menu_run",       0};
 const char* term[]    = {"st",             0};
-const char* scrot[]   = {"screenshot.sh",  0};
+const char* scrot[]   = {"screenshot",     0};
 const char* briup[]   = {"bri", "10", "+", 0};
 const char* bridown[] = {"bri", "10", "-", 0};
 
-const char* voldown[] = {"chvol.sh", "5%-",    0};
-const char* volup[]   = {"chvol.sh", "5%+",    0};
-const char* volmute[] = {"chvol.sh", "toggle", 0};
+const char* voldown[] = {"chvol", "5%-",    0};
+const char* volup[]   = {"chvol", "5%+",    0};
+const char* volmute[] = {"chvol", "toggle", 0};
 
-const char* hphones[] = {"headphones.sh",   	0};
-const char* music[]   = {"music.sh",        	0};
-const char* fman[]    = {"fman.sh",         	0};
-const char* quit[]    = {"killall", "sowm", 	0};
-const char* layout[]  = {"nextlayout.sh",   	0};
-const char* unicode[] = {"unicode.sh",      	0};
-const char* theme[]   = {"theme.sh", "menu", 	0};
-const char* lock[]    = {"slock",          	0};
-const char* rss[]     = {"rss.sh",          	0};
+const char* hphones[] = {"headphones",          0};
+const char* music[]   = {"music",               0};
+const char* fman[]    = {"fman",                0};
+const char* quit[]    = {"killall", "sowm",     0};
+const char* layout[]  = {"nextlayout",          0};
+const char* unicode[] = {"unicode",             0};
+const char* theme[]   = {"theme", "menu",       0};
+const char* lock[]    = {"slock",               0};
+const char* rss[]     = {"rss",                 0};
+const char* scp[]     = {"scp",                 0};
 
 static struct key keys[] = {
     {MOD,           XK_q,   win_kill,   {0}},
@@ -37,7 +38,8 @@ static struct key keys[] = {
     {MOD, XK_m,      run, {.com = music}},
     {MOD, XK_a,      run, {.com = fman}},
     {MOD, XK_r,      run, {.com = rss}},
-    {MOD, XK_s,      run, {.com = scrot}},
+    {MOD, XK_s,      run, {.com = scp}},
+    {MOD, XK_w,      run, {.com = scrot}},
     {MOD, XK_l,      run, {.com = lock}},
     {MOD, XK_t,      run, {.com = theme}},
     {MOD, XK_u,      run, {.com = unicode}},
