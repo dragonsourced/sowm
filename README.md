@@ -46,15 +46,15 @@ Patches available here: https://github.com/dylanaraps/sowm-patches
 | ------------------------ | ---------------- | ---------------- |
 | `MOD4` + `Return`        | terminal         | `st`             |
 | `MOD4` + `Shift` + `q`   | kill sowm        | `killall`        |
-| `MOD4` + `p`             | dmenu            | `menu_run.sh`    |
-| `MOD4` + `p`             | headphones menu  | `headphones.sh`  |
-| `MOD4` + `p`             | music menu       | `music.sh`       |
-| `MOD4` + `a`             | file manager     | `fman.sh`        |
-| `MOD4` + `s`             | screenshot       | `screenshot.sh`  |
-| `MOD4` + `space`         | keyboard layout  | `nextlayout.sh`  |
-| `XF86_AudioLowerVolume`  | volume down      | `chvol.sh`       |
-| `XF86_AudioRaiseVolume`  | volume up        | `chvol.sh`       |
-| `XF86_AudioMute`         | volume toggle    | `chvol.sh`       |
+| `MOD4` + `p`             | dmenu            | `menu_run`       |
+| `MOD4` + `p`             | headphones menu  | `headphones`     |
+| `MOD4` + `p`             | music menu       | `music`          |
+| `MOD4` + `a`             | file manager     | `fman`           |
+| `MOD4` + `s`             | screenshot       | `screenshot`     |
+| `MOD4` + `space`         | keyboard layout  | `nextlayout`     |
+| `XF86_AudioLowerVolume`  | volume down      | `chvol`          |
+| `XF86_AudioRaiseVolume`  | volume up        | `chvol`          |
+| `XF86_AudioMute`         | volume toggle    | `chvol`          |
 | `XF86_MonBrightnessUp`   | brightness up    | `bri`            |
 | `XF86_MonBrightnessDown` | brightness down  | `bri`            |
 
