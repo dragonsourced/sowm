@@ -253,6 +253,10 @@ void input_grab(Window root) {
     XFreeModifiermap(modmap);
 }
 
+int xerror(Display *d, XErrorEvent *e) {
+    return 0;
+}
+
 int main(void) {
     XEvent ev;
 
