@@ -13,40 +13,40 @@
         (ShiftMask|ControlMask|Mod1Mask|Mod2Mask|Mod3Mask|Mod4Mask|Mod5Mask))
 
 typedef union {
-    const char** com;
-    const int i;
-    const Window w;
+	const char **com;
+	const int i;
+	const Window w;
 } Arg;
 
 struct key {
-    unsigned int mod;
-    KeySym keysym;
-    void (*function)(const Arg arg);
-    const Arg arg;
+	unsigned int mod;
+	KeySym keysym;
+	void (*function)(const Arg arg);
+	const Arg arg;
 };
 
 typedef struct client {
-    struct client *next, *prev;
-    int f, wx, wy;
-    unsigned int ww, wh;
-    Window w;
+	struct client *next, *prev;
+	int f, wx, wy;
+	unsigned int ww, wh;
+	Window w;
 } client;
 
-void button_press(XEvent *e);
-void button_release(XEvent *e);
-void configure_request(XEvent *e);
+void button_press(XEvent * e);
+void button_release(XEvent * e);
+void configure_request(XEvent * e);
 void input_grab(Window root);
-void key_press(XEvent *e);
-void map_request(XEvent *e);
-void notify_destroy(XEvent *e);
-void notify_enter(XEvent *e);
-void notify_motion(XEvent *e);
+void key_press(XEvent * e);
+void map_request(XEvent * e);
+void notify_destroy(XEvent * e);
+void notify_enter(XEvent * e);
+void notify_motion(XEvent * e);
 void run(const Arg arg);
 void win_add(Window w);
 void win_center(const Arg arg);
 void win_del(Window w);
 void win_fs(const Arg arg);
-void win_focus(client *c);
+void win_focus(client * c);
 void win_kill(const Arg arg);
 void win_prev(const Arg arg);
 void win_next(const Arg arg);
