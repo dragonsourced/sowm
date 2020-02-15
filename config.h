@@ -5,7 +5,7 @@
 
 const char* menu[]    = {"menu_run",       0};
 const char* term[]    = {"st",             0};
-const char* scrot[]   = {"screenshot",     0};
+const char* scrot[]   = {"scr",            0};
 const char* briup[]   = {"bri", "10", "+", 0};
 const char* bridown[] = {"bri", "10", "-", 0};
 
