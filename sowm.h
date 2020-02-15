@@ -52,4 +52,4 @@ void win_prev(const Arg arg);
 void win_next(const Arg arg);
 void win_to_ws(const Arg arg);
 void ws_go(const Arg arg);
-int  xerror(Display *, XErrorEvent *);
+void quit(const Arg arg);

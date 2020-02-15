@@ -3,67 +3,49 @@
 
 #define MOD Mod4Mask
 
-const char* menu[]    = {"menu_run",       0};
-const char* term[]    = {"st",             0};
-const char* scrot[]   = {"scr",            0};
-const char* briup[]   = {"bri", "10", "+", 0};
-const char* bridown[] = {"bri", "10", "-", 0};
+/* Utilities */
 
-const char* voldown[] = {"chvol", "5%-",    0};
-const char* volup[]   = {"chvol", "5%+",    0};
-const char* volmute[] = {"chvol", "toggle", 0};
+const char *menu[]  = { "dmenu_run", 0 };
+const char *term[]  = { "st",  0 };
+const char *scrot[] = { "scr", 0 };
 
-const char* hphones[] = {"headphones",          0};
-const char* music[]   = {"music",               0};
-const char* fman[]    = {"fman",                0};
-const char* quit[]    = {"killall", "sowm",     0};
-const char* layout[]  = {"nextlayout",          0};
-const char* unicode[] = {"unicode",             0};
-const char* theme[]   = {"theme", "menu",       0};
-const char* lock[]    = {"slock",               0};
-const char* rss[]     = {"rss",                 0};
-const char* scp[]     = {"scp",                 0};
+/* Volume */
+
+const char *voldown[] = { "chvol", "5%-", 0 };
+const char *volup[]   = { "chvol", "5%+", 0 };
+const char *volmute[] = { "chvol", "toggle", 0 };
 
 static struct key keys[] = {
-    {MOD,           XK_q,   win_kill,   {0}},
-    {MOD|ShiftMask, XK_q,   run,        {.com = quit}},
-    {MOD,           XK_c,   win_center, {0}},
-    {MOD,           XK_f,   win_fs,     {0}},
+	{ MOD,             XK_q, win_kill,   {0} },
+	{ MOD,             XK_c, win_center, {0} },
+	{ MOD,             XK_f, win_fs,     {0} },
+	{ MOD | ShiftMask, XK_q, quit,       {0} },
 
-    {Mod1Mask,           XK_Tab, win_next,   {0}},
-    {Mod1Mask|ShiftMask, XK_Tab, win_prev,   {0}},
+	{ Mod1Mask,             XK_Tab, win_next, {0} },
+	{ Mod1Mask | ShiftMask, XK_Tab, win_prev, {0} },
+	{ MOD,             XK_Tab, win_next, {0} },
+	{ MOD | ShiftMask, XK_Tab, win_prev, {0} },
 
-    {MOD, XK_p,      run, {.com = menu}},
-    {MOD, XK_h,      run, {.com = hphones}},
-    {MOD, XK_m,      run, {.com = music}},
-    {MOD, XK_a,      run, {.com = fman}},
-    {MOD, XK_r,      run, {.com = rss}},
-    {MOD, XK_s,      run, {.com = scp}},
-    {MOD, XK_w,      run, {.com = scrot}},
-    {MOD, XK_l,      run, {.com = lock}},
-    {MOD, XK_t,      run, {.com = theme}},
-    {MOD, XK_u,      run, {.com = unicode}},
-    {MOD, XK_space,  run, {.com = layout}},
-    {MOD, XK_Return, run, {.com = term}},
+	{ MOD, XK_d,      run, {.com = menu} },
+	{ MOD, XK_p,      run, {.com = scrot} },
+	{ MOD, XK_Return, run, {.com = term} },
 
-    {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
-    {0,   XF86XK_AudioRaiseVolume,  run, {.com = volup}},
-    {0,   XF86XK_AudioMute,         run, {.com = volmute}},
-    {0,   XF86XK_MonBrightnessUp,   run, {.com = briup}},
-    {0,   XF86XK_MonBrightnessDown, run, {.com = bridown}},
+	{ 0, XF86XK_AudioLowerVolume, run, {.com = voldown} },
+	{ 0, XF86XK_AudioRaiseVolume, run, {.com = volup} },
+	{ 0, XF86XK_AudioMute,        run, {.com = volmute} },
 
-    {MOD,           XK_1, ws_go,     {.i = 1}},
-    {MOD|ShiftMask, XK_1, win_to_ws, {.i = 1}},
-    {MOD,           XK_2, ws_go,     {.i = 2}},
-    {MOD|ShiftMask, XK_2, win_to_ws, {.i = 2}},
-    {MOD,           XK_3, ws_go,     {.i = 3}},
-    {MOD|ShiftMask, XK_3, win_to_ws, {.i = 3}},
-    {MOD,           XK_4, ws_go,     {.i = 4}},
-    {MOD|ShiftMask, XK_4, win_to_ws, {.i = 4}},
-    {MOD,           XK_5, ws_go,     {.i = 5}},
-    {MOD|ShiftMask, XK_5, win_to_ws, {.i = 5}},
-    {MOD,           XK_6, ws_go,     {.i = 6}},
-    {MOD|ShiftMask, XK_6, win_to_ws, {.i = 6}},
+	{ MOD, XK_1, ws_go, {.i = 1} },
+	{ MOD | ShiftMask, XK_1, win_to_ws, {.i = 1} },
+	{ MOD, XK_2, ws_go, {.i = 2} },
+	{ MOD | ShiftMask, XK_2, win_to_ws, {.i = 2} },
+	{ MOD, XK_3, ws_go, {.i = 3} },
+	{ MOD | ShiftMask, XK_3, win_to_ws, {.i = 3} },
+	{ MOD, XK_4, ws_go, {.i = 4} },
+	{ MOD | ShiftMask, XK_4, win_to_ws, {.i = 4} },
+	{ MOD, XK_5, ws_go, {.i = 5} },
+	{ MOD | ShiftMask, XK_5, win_to_ws, {.i = 5} },
+	{ MOD, XK_6, ws_go, {.i = 6} },
+	{ MOD | ShiftMask, XK_6, win_to_ws, {.i = 6} },
 };
 
 #endif
