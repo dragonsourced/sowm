@@ -3,6 +3,8 @@
 
 #define MOD Mod4Mask
 
+#define MARGIN 20
+
 /* Utilities */
 
 const char *menu[]  = { "menu_run", 0 };
@@ -29,7 +31,8 @@ const char *volmute[] = { "chvol", "toggle", 0 };
 static struct key keys[] = {
 	{ MOD,             XK_q, win_kill,   {0} },
 	{ MOD,             XK_c, win_center, {0} },
-	{ MOD,             XK_f, win_fs,     {0} },
+	{ MOD,             XK_f, win_fill,   {0} },
+	{ MOD | ShiftMask, XK_f, win_fs,     {0} },
 	{ MOD | ShiftMask, XK_q, quit,       {0} },
 
 	{ Mod1Mask,             XK_Tab, win_next, {0} },

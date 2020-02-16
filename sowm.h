@@ -45,6 +45,7 @@ void run(const Arg arg);
 void win_add(Window w);
 void win_center(const Arg arg);
 void win_del(Window w);
+void win_fill(const Arg arg);
 void win_fs(const Arg arg);
 void win_focus(client * c);
 void win_kill(const Arg arg);
