@@ -41,6 +41,7 @@ static struct key keys[] = {
 	{ MOD | ShiftMask, XK_space, run, {.com = layout_prev} },
 
 	{ MOD, XK_r,      run, {.com = rss} },
+	{ MOD, XK_t,      run, {.com = theme} },
 	{ MOD, XK_l,      run, {.com = lock} },
 
 	{ MOD, XK_p,      run, {.com = menu} },
