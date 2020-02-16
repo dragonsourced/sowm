@@ -8,6 +8,12 @@
 const char *menu[]  = { "menu_run", 0 };
 const char *term[]  = { "st",  0 };
 const char *scrot[] = { "scr", 0 };
+const char *lock[]  = { "slock", 0 };
+
+/* Scripts */
+
+const char *rss[]   = { "rss", 0 };
+const char *theme[] = { "theme", "menu", 0 };
 
 /* Keyboard layout */
 
@@ -33,6 +39,9 @@ static struct key keys[] = {
 
 	{ MOD,             XK_space, run, {.com = layout_next} },
 	{ MOD | ShiftMask, XK_space, run, {.com = layout_prev} },
+
+	{ MOD, XK_r,      run, {.com = rss} },
+	{ MOD, XK_l,      run, {.com = lock} },
 
 	{ MOD, XK_p,      run, {.com = menu} },
 	{ MOD, XK_s,      run, {.com = scrot} },
