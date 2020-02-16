@@ -5,7 +5,7 @@
 
 /* Utilities */
 
-const char *menu[]  = { "dmenu_run", 0 };
+const char *menu[]  = { "menu_run", 0 };
 const char *term[]  = { "st",  0 };
 const char *scrot[] = { "scr", 0 };
 
@@ -26,8 +26,8 @@ static struct key keys[] = {
 	{ MOD,             XK_Tab, win_next, {0} },
 	{ MOD | ShiftMask, XK_Tab, win_prev, {0} },
 
-	{ MOD, XK_d,      run, {.com = menu} },
-	{ MOD, XK_p,      run, {.com = scrot} },
+	{ MOD, XK_p,      run, {.com = menu} },
+	{ MOD, XK_s,      run, {.com = scrot} },
 	{ MOD, XK_Return, run, {.com = term} },
 
 	{ 0, XF86XK_AudioLowerVolume, run, {.com = voldown} },
