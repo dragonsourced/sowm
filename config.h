@@ -9,6 +9,11 @@ const char *menu[]  = { "menu_run", 0 };
 const char *term[]  = { "st",  0 };
 const char *scrot[] = { "scr", 0 };
 
+/* Keyboard layout */
+
+const char *layout_next[] = { "layout", "next", 0 };
+const char *layout_prev[] = { "layout", "prev", 0 };
+
 /* Volume */
 
 const char *voldown[] = { "chvol", "5%-", 0 };
@@ -25,6 +30,9 @@ static struct key keys[] = {
 	{ Mod1Mask | ShiftMask, XK_Tab, win_prev, {0} },
 	{ MOD,             XK_Tab, win_next, {0} },
 	{ MOD | ShiftMask, XK_Tab, win_prev, {0} },
+
+	{ MOD,             XK_space, run, {.com = layout_next} },
+	{ MOD | ShiftMask, XK_space, run, {.com = layout_prev} },
 
 	{ MOD, XK_p,      run, {.com = menu} },
 	{ MOD, XK_s,      run, {.com = scrot} },
